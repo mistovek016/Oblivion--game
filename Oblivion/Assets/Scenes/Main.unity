@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c385437b6f6d94c20ad6dded16efbf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.3
+  movespeed: 0.26
   health: 3
 --- !u!212 &412204280
 SpriteRenderer:
@@ -238,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 412204277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.6, z: -7.937873}
-  m_LocalScale: {x: 4.043626, y: 4.043626, z: 4.043626}
+  m_LocalScale: {x: 2.6520524, y: 2.6520524, z: 2.6520524}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -501,9 +501,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePatterns:
-  - {fileID: 7261457949609166709, guid: 233f6a7d6994b40b98ebc0e14e742abe, type: 3}
-  - {fileID: 667710638139951814, guid: 42da71e93d6df4d36966d9f8ef076985, type: 3}
-  - {fileID: 7761070332394906819, guid: 58bbee492b02e4fc287450ca6df5b5e2, type: 3}
+  - {fileID: 1613370557167543478, guid: b58d89e6b7c6546be97ce23944beb844, type: 3}
+  - {fileID: 354311360363056127, guid: e0fa5ae0737244347806ca06714f895d, type: 3}
+  - {fileID: 6191708713718490844, guid: e61661c817c854295b7b4aa3239010c3, type: 3}
   - {fileID: 607914347628774871, guid: b0c95b443919e4633a659a260a923ca6, type: 3}
   - {fileID: 1145614096515088702, guid: 3c4d78b2e2bb946e5889a9d7b7e4adda, type: 3}
   - {fileID: 5560683638639707933, guid: b0e3895ff97fa4c1093d0f917b4246f4, type: 3}
