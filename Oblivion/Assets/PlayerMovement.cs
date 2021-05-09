@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     private static Rigidbody2D rb;
 
+    public int health = 3;
+
     Vector2 movement;
 
     void Start()
