@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private static Rigidbody2D rb;
 
-    public int health = 3;
+    public int health = 6;
 
     Vector2 movement;
 
@@ -20,8 +21,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         //Input
         movement.x = Input.GetAxisRaw("Horizontal");
+
+        if (health <= 0)
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
         
     }
 
