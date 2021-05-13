@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
+    public Text healthDisplay;
+
+    //public GameObject effect;
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -21,10 +26,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        healthDisplay.text = health.ToString();
 
         //Input
+        
         movement.x = Input.GetAxisRaw("Horizontal");
+        
 
         if (health <= 0)
         {
@@ -38,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //Movement
+        // Particle System trial (down)
+        //Instantiate(effect, transform.position, Quaternion.identity);
         rb.MovePosition(rb.position + movement * movespeed);
     }
 }
