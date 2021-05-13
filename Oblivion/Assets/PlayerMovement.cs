@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Text healthDisplay;
 
+    public GameObject gameOver;
+
     //public GameObject effect;
 
     void Start()
@@ -36,12 +38,14 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
         {
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameOver.SetActive(true);
+            Destroy(gameObject);
 
         }
         
     }
 
+   
     private void FixedUpdate()
     {
         //Movement
