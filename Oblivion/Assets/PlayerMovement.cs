@@ -12,17 +12,25 @@ public class PlayerMovement : MonoBehaviour
 
     public int health = 6;
 
+    public int currentHealth;
+
+    public int Maxhealth;
+
     Vector2 movement;
 
     public Text healthDisplay;
 
     public GameObject gameOver;
 
+    public HealthBar healthBar;
+
     //public GameObject effect;
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        currentHealth = Maxhealth;
+        healthBar.SetMaxHealth(Maxhealth);
     }
 
     // Update is called once per frame
