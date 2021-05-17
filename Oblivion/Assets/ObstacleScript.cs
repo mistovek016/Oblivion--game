@@ -8,6 +8,8 @@ public class ObstacleScript : MonoBehaviour
 
     public int damage = 1;
 
+   
+
     private Animator animator;
 
     
@@ -24,6 +26,8 @@ public class ObstacleScript : MonoBehaviour
             
 
         }
+
+       
     }
 
     private void Update()

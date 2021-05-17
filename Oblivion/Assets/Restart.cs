@@ -7,12 +7,12 @@ public class Restart : MonoBehaviour
 {
 
     // Update is called once per frame
-    void Update()
+    public void Restart1()
     {
-        if (Input.GetKeyDown(KeyCode.A)) { 
+        
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-        }
+        
     }
 }
