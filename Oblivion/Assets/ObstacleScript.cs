@@ -20,7 +20,7 @@ public class ObstacleScript : MonoBehaviour
         {
             other.GetComponent<PlayerMovement>().health -= damage;
             other.GetComponent<PlayerMovement>().healthBar.SetHealth(other.GetComponent<PlayerMovement>().health);
-            Debug.Log(other.GetComponent<PlayerMovement>().health);
+            //Debug.Log(other.GetComponent<PlayerMovement>().health);
             
             animator.Play("Asteroid-1-Breaking");
             

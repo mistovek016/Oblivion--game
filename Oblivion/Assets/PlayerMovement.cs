@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int Maxhealth;
 
-
+    public GameObject ScoreManager;
 
     Vector2 movement;
 
@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
             gameOver.SetActive(true);
             Destroy(gameObject);
+            Destroy(ScoreManager);
 
         }
         

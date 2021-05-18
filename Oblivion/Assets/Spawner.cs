@@ -14,6 +14,8 @@ public class Spawner : MonoBehaviour
 
     public float minTime = 0.65f;
 
+    
+
     private void Update()
     {
         if (timeBtwSpawn <= 0)
@@ -40,6 +42,7 @@ public class Spawner : MonoBehaviour
 
         }
 
+        
 
     }
 }
