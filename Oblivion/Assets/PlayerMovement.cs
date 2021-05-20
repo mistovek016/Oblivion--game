@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    public Text healthDisplay;
+    public Text Healthdisplay;
 
     public GameObject gameOver;
 
@@ -45,7 +45,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthDisplay.text = health.ToString();
+        Healthdisplay.text = health.ToString();
+
 
         //Input
         
@@ -58,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
             gameOver.SetActive(true);
             Destroy(gameObject);
             Destroy(ScoreManager);
+
 
         }
         

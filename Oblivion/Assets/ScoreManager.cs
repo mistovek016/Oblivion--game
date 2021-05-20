@@ -12,10 +12,32 @@ public class ScoreManager : MonoBehaviour
 
     public Text ScoreDisplay1;
 
+    public GameObject LevelComplete;
+
+    public GameObject Blob;
+
+    public GameObject Score;
+
+    public GameObject Healthbar;
+
+    
+
     private void Update()
     {
         ScoreDisplay.text = score.ToString();
         ScoreDisplay1.text = score.ToString();
+        
+
+        if (score >= 20)
+        {
+
+            LevelComplete.SetActive(true);
+            Destroy(gameObject);
+            Destroy(Blob);
+            Destroy(Healthbar);
+            Destroy(Score);
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
