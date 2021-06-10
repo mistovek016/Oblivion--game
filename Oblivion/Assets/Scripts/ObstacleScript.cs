@@ -8,7 +8,7 @@ public class ObstacleScript : MonoBehaviour
 
     public int damage = 1;
 
-   
+    public GameObject asteroidefect;
 
     private Animator animator;
 
@@ -23,11 +23,13 @@ public class ObstacleScript : MonoBehaviour
             //Debug.Log(other.GetComponent<PlayerMovement>().health);
             
             animator.Play("Asteroid-1-Breaking");
-            
-
+  
         }
 
-       
+        
+
+
+
     }
 
     private void Update()
