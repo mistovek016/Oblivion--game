@@ -1947,11 +1947,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &412204277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3070588501609654830, guid: 837badb1955444477a3874acbc408e79, type: 3}
-  m_PrefabInstance: {fileID: 3070588501197461211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &420998848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,7 +4200,7 @@ MonoBehaviour:
   ScoreDisplay: {fileID: 1978763185}
   ScoreDisplay1: {fileID: 965953272}
   LevelComplete: {fileID: 1593155546}
-  Blob: {fileID: 412204277}
+  Blob: {fileID: 3070588501197461212}
   Score: {fileID: 780207477}
   Healthbar: {fileID: 1461272910}
   scorelimit: 20
@@ -5751,7 +5746,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1282218598
 MonoBehaviour:
@@ -9028,6 +9023,30 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 372283253803060513, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3395852469636957578, guid: 5171b163b6c6a9b4ca927a6ab9264da2, type: 3}
+    - target: {fileID: 372283253803060513, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 372283253803060514, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 936787849}
+    - target: {fileID: 372283253803060514, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1461272913}
+    - target: {fileID: 372283253803060514, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: ScoreManager
+      value: 
+      objectReference: {fileID: 885148212}
+    - target: {fileID: 372283253803060514, guid: 837badb1955444477a3874acbc408e79, type: 3}
+      propertyPath: Healthdisplay
+      value: 
+      objectReference: {fileID: 1324032316}
     - target: {fileID: 3070588501481493186, guid: 837badb1955444477a3874acbc408e79, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9104,6 +9123,11 @@ PrefabInstance:
     - {fileID: 3070588501609654822, guid: 837badb1955444477a3874acbc408e79, type: 3}
     - {fileID: 184072701042526858, guid: 837badb1955444477a3874acbc408e79, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 837badb1955444477a3874acbc408e79, type: 3}
+--- !u!1 &3070588501197461212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 372283253803060526, guid: 837badb1955444477a3874acbc408e79, type: 3}
+  m_PrefabInstance: {fileID: 3070588501197461211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5250794370495285513
 PrefabInstance:
   m_ObjectHideFlags: 0

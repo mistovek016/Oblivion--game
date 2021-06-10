@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 303ed409553dc4f5bbf6691006db2da2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Collider: {instanceID: 0}
+  - renderer: {instanceID: 0}
+  - Asteroid: {fileID: 5250794368665315589, guid: 61ff3d8d5897a4afab14aba761161a4f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

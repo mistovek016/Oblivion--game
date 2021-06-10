@@ -26,12 +26,13 @@ public class PlayerMovement : MonoBehaviour
 
     public HealthBar healthBar;
 
-   
+    /*public SpriteRenderer blobRenderer;
 
+    public BoxCollider2D Collider;
 
-   
+    public bool shieldControl;
 
-    //public GameObject effect;
+    public GameObject transperantBlob;*/
 
     void Start()
     {
@@ -39,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         currentHealth = Maxhealth;
         
         healthBar.SetMaxHealth(Maxhealth);
+
+        //shieldControl = true;
         
     }
 
@@ -49,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
 
 
         //Input
-        
+
         movement.x = Input.GetAxisRaw("Horizontal");
-        
+
 
         if (health <= 0)
         {
@@ -62,9 +65,39 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-        
+
+        /*if (Input.GetKey(KeyCode.Space))
+        {
+
+            blobRenderer.color = new Color (1, 1, 1, 0);
+            Collider.enabled = false;
+
+            Invoke("ShieldDisable", 5);
+
+            //yield return new WaitForSeconds(5);
+            //shieldControl = false;
+            //blobRenderer.color = new Color(1, 1, 1, 1);
+        }
+
+        if (shieldControl == false)
+        {
+
+            Destroy(transperantBlob);
+
+        }
     }
 
+    public void ShieldDisable()
+    {
+
+        shieldControl = false;
+        blobRenderer.color = new Color(1, 1, 1, 1);
+        Collider.enabled = true;
+        
+
+    }*/
+
+    }
    
     private void FixedUpdate()
     {
